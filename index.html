@@ -102,6 +102,13 @@ ul.bul li b{font-weight:700;color:var(--navy)}
 .card p{font-size:.94rem;line-height:1.7;color:var(--ink-2)}
 .sec-navy .card p{color:#c3ccd6}
 
+/* ---------- theme grid (今後のテーマ例) ---------- */
+.themegrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:6px}
+.tcell{background:var(--navy-soft);border:1px solid rgba(255,255,255,.12);padding:18px;
+  display:flex;flex-direction:column;gap:8px;font-size:.98rem;line-height:1.5;color:#dbe2ea}
+.tlabel{font-size:.74rem;font-weight:700;letter-spacing:.06em;color:var(--accent)}
+@media(max-width:820px){.themegrid{grid-template-columns:1fr 1fr}}
+
 /* ---------- agenda ---------- */
 .agenda{border:1px solid var(--line);background:var(--paper);margin-top:6px}
 .arow{display:flex;align-items:flex-start;gap:22px;padding:18px 24px;border-bottom:1px solid var(--line)}
@@ -389,6 +396,26 @@ footer a{color:#9fb0bf}footer a:hover{color:#fff}
       <li>その場で<b>自社の採用フロー</b>に当てはめ、詰まったら相談</li>
     </ul>
     <div class="smallnote">2回目以降は、みなさんのご要望アンケートでテーマを決めます。「うちのこれを何とかしたい」を持ち寄ってください。</div>
+  </div>
+</section>
+
+<!-- 8.5 今後のテーマ例 -->
+<section class="sec-navy" id="themes">
+  <div class="wrap">
+    <div class="kicker">今後のテーマ例</div>
+    <h2 class="title">扱うのは<span class="hl">経営に効く8領域</span>。順に開催していきます</h2>
+    <div class="rule"></div>
+    <div class="themegrid">
+      <div class="tcell"><span class="tlabel">採用</span>求人票・スカウト文の量産</div>
+      <div class="tcell"><span class="tlabel">業務効率化</span>請求書・領収書の仕分け</div>
+      <div class="tcell"><span class="tlabel">営業</span>商談メモから提案書のたたき</div>
+      <div class="tcell"><span class="tlabel">経営管理</span>月次サマリと前月比コメント</div>
+      <div class="tcell"><span class="tlabel">労務</span>社内規程のQ&amp;A化</div>
+      <div class="tcell"><span class="tlabel">顧客対応</span>問い合わせの一次回答</div>
+      <div class="tcell"><span class="tlabel">ナレッジ</span>議事録から社内ナレッジ化</div>
+      <div class="tcell"><span class="tlabel">制作</span>LP・スライドの下書き</div>
+    </div>
+    <div class="smallnote">まずは採用から。以降は業務効率化・営業・経営管理・労務…と順に回します。リクエスト回のテーマは会員アンケートで決めます。</div>
   </div>
 </section>
 
